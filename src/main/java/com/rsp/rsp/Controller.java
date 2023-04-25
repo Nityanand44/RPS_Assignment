@@ -34,8 +34,9 @@ public class Controller {
 
 
 
-        @RequestMapping("/play")
-public String playGame(@RequestParam("move") String playerMove) {
+       
+   @RequestMapping("/play")
+    public String playGame(@RequestParam("move") String playerMove) {
     logger.info("Received player move: {}", playerMove);
     String computerMove = generateRandomMove();
     logger.info("Generated computer move: {}", computerMove);
